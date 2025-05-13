@@ -1,100 +1,100 @@
 {
     "Design": [
         {
-            "id": "2",
-            "email": "bob@example.com",
-            "name": "Bob Smith",
             "department": "Design",
+            "email": "bob@example.com",
             "hours_worked": "150",
-            "rate": "40",
-            "payout": 6000
+            "id": "2",
+            "name": "Bob Smith",
+            "payout": 6000,
+            "rate": "40"
         },
         {
-            "id": "3",
-            "email": "carol@example.com",
-            "name": "Carol Williams",
             "department": "Design",
+            "email": "carol@example.com",
             "hours_worked": "170",
-            "rate": "60",
-            "payout": 10200
+            "id": "3",
+            "name": "Carol Williams",
+            "payout": 10200,
+            "rate": "60"
         }
     ],
     "HR": [
         {
-            "id": "4",
+            "department": "HR",
             "email": "enma@example.com",
-            "name": "Enma Crypto",
-            "department": "HR",
             "hours_worked": "165",
-            "rate": "55",
-            "payout": 9075
+            "id": "4",
+            "name": "Enma Crypto",
+            "payout": 9075,
+            "rate": "55"
         },
         {
             "department": "HR",
-            "id": "101",
             "email": "grace@example.com",
-            "name": "Grace Lee",
             "hours_worked": "160",
-            "rate": "45",
-            "payout": 7200
+            "id": "101",
+            "name": "Grace Lee",
+            "payout": 7200,
+            "rate": "45"
         },
         {
             "department": "HR",
-            "id": "103",
             "email": "ivy@example.com",
-            "name": "Ivy Clark",
             "hours_worked": "158",
-            "rate": "38",
-            "payout": 6004
+            "id": "103",
+            "name": "Ivy Clark",
+            "payout": 6004,
+            "rate": "38"
         },
         {
-            "email": "liam@example.com",
-            "name": "Liam Harris",
             "department": "HR",
+            "email": "liam@example.com",
             "hours_worked": "155",
-            "rate": "42",
             "id": "202",
-            "payout": 6510
+            "name": "Liam Harris",
+            "payout": 6510,
+            "rate": "42"
         }
     ],
     "Marketing": [
         {
-            "id": "1",
-            "email": "alice@example.com",
-            "name": "Alice Johnson",
             "department": "Marketing",
+            "email": "alice@example.com",
             "hours_worked": "160",
-            "rate": "50",
-            "payout": 8000
+            "id": "1",
+            "name": "Alice Johnson",
+            "payout": 8000,
+            "rate": "50"
         },
         {
             "department": "Marketing",
-            "id": "102",
             "email": "henry@example.com",
-            "name": "Henry Martin",
             "hours_worked": "150",
-            "rate": "35",
-            "payout": 5250
+            "id": "102",
+            "name": "Henry Martin",
+            "payout": 5250,
+            "rate": "35"
         }
     ],
     "Sales": [
         {
-            "email": "karen@example.com",
-            "name": "Karen White",
             "department": "Sales",
+            "email": "karen@example.com",
             "hours_worked": "165",
-            "rate": "50",
             "id": "201",
-            "payout": 8250
+            "name": "Karen White",
+            "payout": 8250,
+            "rate": "50"
         },
         {
-            "email": "mia@example.com",
-            "name": "Mia Young",
             "department": "Sales",
+            "email": "mia@example.com",
             "hours_worked": "160",
-            "rate": "37",
             "id": "203",
-            "payout": 5920
+            "name": "Mia Young",
+            "payout": 5920,
+            "rate": "37"
         }
     ]
 }

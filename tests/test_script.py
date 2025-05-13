@@ -1,10 +1,7 @@
-import builtins
-import json
 
+import json
 import pytest
 from src.src import Src
-from unittest.mock import patch, MagicMock
-from io import StringIO
 from utils.utils import Utils
 
 
@@ -104,7 +101,7 @@ def test_beauty_view(capsys):
     assert "payout" in output
 
 def test_get_data(tmp_path):
-    # Подготовка CSV-файла
+
     content = (
         "id,name,email,hours_worked,rate,department\n"
         "1,Alice,alice@example.com,160,50,HR\n"
@@ -116,7 +113,6 @@ def test_get_data(tmp_path):
     utils = Utils()
     result = utils.get_data(str(test_file))
 
-    # Ожидаемый результат после нормализации (если normalize_keys и add_new_key ничего не ломают)
     expected = [
         {
             "id": "1",
@@ -156,20 +152,15 @@ def mock_args():
 def test_get_files(mock_args, mocker, monkeypatch):
     monkeypatch.setattr('sys.argv', ['script.py', '--report', 'json', 'file1.csv', 'file2.csv'])
 
-    # Мокаем метод get_data у Utils
     mock_data = [{'id': '1', 'name': 'Alice', 'department': 'HR'}]
     mock_get_data = mocker.patch.object(Utils, 'get_data', return_value=mock_data)
 
-    # Создаём объект Src, который при init вызывает parse_args()
-    obj = Src()
+    src = Src()
 
-    # Вызываем get_files
-    result = obj.get_files()
+    result = src.get_files()
 
-    # Проверка: метод get_data вызван 2 раза — по числу файлов
     assert mock_get_data.call_count == 2
 
-    # Проверка: результат содержит два одинаковых словаря
     assert result == mock_data * 2
 
 """ТЕСТ ДЛЯ ФУНКЦИИ report_creator_json"""
@@ -181,26 +172,21 @@ def test_report_creator_json(mock_args, mocker, monkeypatch):
         {"id": "3", "name": "Charlie", "email": "charlie@example.com", "hours_worked": "170", "rate": "60", "payout": "10200", "department": "Engineering"}
     ]
 
-    # Мокаем аргументы через monkeypatch
     monkeypatch.setattr('sys.argv', ['pytest', '--report', 'test_report', 'test_file.csv'])
 
-    src = Src()  # Подставляем аргуенты
-    # Мокаем чтобы не создавать реальные файлы
+    src = Src()
+
     mock_open = mocker.patch("builtins.open", mocker.mock_open())
 
     src.report_creator_json(data)
 
-    # Проверяем, что файл был открыт с правильным именем
     mock_open.assert_called_with("report_test_report.json", 'w', encoding='utf-8')
 
-    # Получаем все вызовы
     handle = mock_open()
     write_calls = handle.write.call_args_list
 
-    # Проверяем, что данные были записаны
     written_data = ''.join([call[0][0] for call in write_calls])
 
-    # Десериализуем полученные данные
     written_json = json.loads(written_data)
 
     expected_data = {
