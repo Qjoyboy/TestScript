@@ -1,0 +1,19 @@
+id    name                email               hours_worked   rate payout    
+
+--------Design--------
+2     Bob Smith           bob@example.com     150            40   6000      
+3     Carol Williams      carol@example.com   170            60   10200     
+
+--------HR--------
+4     Enma Crypto         enma@example.com    165            55   9075      
+101   Grace Lee           grace@example.com   160            45   7200      
+103   Ivy Clark           ivy@example.com     158            38   6004      
+202   Liam Harris         liam@example.com    155            42   6510      
+
+--------Marketing--------
+1     Alice Johnson       alice@example.com   160            50   8000      
+102   Henry Martin        henry@example.com   150            35   5250      
+
+--------Sales--------
+201   Karen White         karen@example.com   165            50   8250      
+203   Mia Young           mia@example.com     160            37   5920      

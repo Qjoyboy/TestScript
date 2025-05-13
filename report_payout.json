@@ -1,0 +1,100 @@
+{
+    "Design": [
+        {
+            "id": "2",
+            "email": "bob@example.com",
+            "name": "Bob Smith",
+            "department": "Design",
+            "hours_worked": "150",
+            "rate": "40",
+            "payout": 6000
+        },
+        {
+            "id": "3",
+            "email": "carol@example.com",
+            "name": "Carol Williams",
+            "department": "Design",
+            "hours_worked": "170",
+            "rate": "60",
+            "payout": 10200
+        }
+    ],
+    "HR": [
+        {
+            "id": "4",
+            "email": "enma@example.com",
+            "name": "Enma Crypto",
+            "department": "HR",
+            "hours_worked": "165",
+            "rate": "55",
+            "payout": 9075
+        },
+        {
+            "department": "HR",
+            "id": "101",
+            "email": "grace@example.com",
+            "name": "Grace Lee",
+            "hours_worked": "160",
+            "rate": "45",
+            "payout": 7200
+        },
+        {
+            "department": "HR",
+            "id": "103",
+            "email": "ivy@example.com",
+            "name": "Ivy Clark",
+            "hours_worked": "158",
+            "rate": "38",
+            "payout": 6004
+        },
+        {
+            "email": "liam@example.com",
+            "name": "Liam Harris",
+            "department": "HR",
+            "hours_worked": "155",
+            "rate": "42",
+            "id": "202",
+            "payout": 6510
+        }
+    ],
+    "Marketing": [
+        {
+            "id": "1",
+            "email": "alice@example.com",
+            "name": "Alice Johnson",
+            "department": "Marketing",
+            "hours_worked": "160",
+            "rate": "50",
+            "payout": 8000
+        },
+        {
+            "department": "Marketing",
+            "id": "102",
+            "email": "henry@example.com",
+            "name": "Henry Martin",
+            "hours_worked": "150",
+            "rate": "35",
+            "payout": 5250
+        }
+    ],
+    "Sales": [
+        {
+            "email": "karen@example.com",
+            "name": "Karen White",
+            "department": "Sales",
+            "hours_worked": "165",
+            "rate": "50",
+            "id": "201",
+            "payout": 8250
+        },
+        {
+            "email": "mia@example.com",
+            "name": "Mia Young",
+            "department": "Sales",
+            "hours_worked": "160",
+            "rate": "37",
+            "id": "203",
+            "payout": 5920
+        }
+    ]
+}
